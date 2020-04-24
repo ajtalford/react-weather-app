@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Current from "../Current/Current";
 // import React from "react";
 
 const Forecast = () => {
@@ -27,9 +28,9 @@ const Forecast = () => {
   return (
     // JSX
     <div>
-      <h2>Find Current Weather Conditions</h2>
-      <div>{JSON.stringify(responseObj)}</div>
-      <button onClick={getWeather}>Weather Forecast</button>
+      <h2>Current Weather</h2>
+      <button onClick={getWeather}>Get Weather</button>
+      <Current responseObj={responseObj} />
     </div>
   );
 };
