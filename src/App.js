@@ -11,7 +11,7 @@ function App() {
       <main>
         <Forecast />
       </main>
-      {/* <footer>Created by Albert Talford</footer> */}
+      <footer>App created by Albert Talford</footer>
     </div>
   );
 }
